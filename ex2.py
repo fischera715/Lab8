@@ -4,7 +4,7 @@ import pandas as pd
 
 
 st.title(" :bar_chart: Sample SuperStore EDA")
-df = pd.read_excel("Sample - Superstore.xls", engine = "xlrd")
+df = pd.read_excel("Sample - Superstore.xlsx")
 
 col1, col2 = st.columns((2))
 df["Order Date"] = pd.to_datetime(df["Order Date"])
